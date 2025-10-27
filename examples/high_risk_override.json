@@ -1,0 +1,10 @@
+{
+  "applicantId": "APP_003",
+  "requestedAmount": 300000,
+  "annualIncome": 200000,
+  "monthlyDebt": 4000,
+  "creditScore": 640,
+  "employmentMonths": 12,
+  "isFirstTimeBuyer": false,
+  "isSelfEmployed": true
+}

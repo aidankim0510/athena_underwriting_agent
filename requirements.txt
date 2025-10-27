@@ -1,0 +1,5 @@
+google-generativeai>=0.7.2
+python-dotenv
+tenacity>=8.2.3
+PyPDF2
+pydantic>=2
