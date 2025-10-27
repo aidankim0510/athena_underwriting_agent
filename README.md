@@ -1,8 +1,8 @@
-🏦 PDF Policy Underwriting Agent
+# 🏦 PDF Policy Underwriting Agent
 
 This project is a command-line tool that reads a loan policy PDF, extracts its lending criteria using Google Gemini, and automatically decides whether a loan application should be approved or denied. It parses rules like credit score thresholds, income minimums, and debt-to-income limits, then applies them to real applicant data with clear reasoning and explanations.
 
-🧰 Tools Used
+# 🧰 Tools Used
 
 I built this project mainly in Python, using the following tools and libraries:
 
@@ -13,7 +13,7 @@ I built this project mainly in Python, using the following tools and libraries:
 - dotenv – to manage API keys and environment variables.
 - argparse & json – for command-line arguments and clean output formatting.
 
-🧠 Thought Process / Architecture
+# 🧠 Thought Process / Architecture
 
 The goal was to create a simple underwriting system that could:
 
@@ -30,7 +30,7 @@ The code is structured into small, focused modules:
 
 It’s designed to be modular, so each piece can be swapped out later—for example, replacing Gemini with OpenAI or adding a web interface.
 
-🚀 Future Improvements & Challenges
+# 🚀 Future Improvements & Challenges
 
 There’s a lot of room to grow:
 
@@ -40,33 +40,43 @@ There’s a lot of room to grow:
 - Interface – turn this into a small dashboard or API service.
 - Error handling – smarter fallback logic if the model output is incomplete.
 
-⚙️ How to Run the Code
+# ⚙️ How to Run the Code
 
 1. Clone the repository
 
-git clone https://github.com/<your-username>/athena-underwriting-agent.git
-cd athena-underwriting-agent
+```
+git clone https://github.com/<your-username>/athena_underwriting_agent.git
+cd athena_underwriting_agent
+```
 
 2. Create and activate a virtual environment
 
+```
 python -m venv .venv
 source .venv/bin/activate   # On Mac/Linux
 # or
 .venv\Scripts\activate      # On Windows
+```
 
 3. Install the dependencies
 
+```
 pip install -r requirements.txt
+```
 
 4. Set up your environment variables
 Copy .env.example → .env and add your Gemini API key:
 
+```
 GEMINI_API_KEY=your_api_key_here
 GEMINI_MODEL=models/gemini-2.5-flash
+```
 
 5. Run the underwriting agent
 
-python -m src.cli --policy data/loan_policy.pdf --app examples/sample_app.json
+```
+python -m src.cli --policy data/loan_policy.pdf --app examples/sample_app.json # or other test files
+```
 
 6. View the results
 
@@ -74,4 +84,4 @@ The tool will print a formatted underwriting decision, including:
 - Approval or denial result
 - Reasoning breakdown (credit, DTI, employment)
 - Applied policy rules
-- JSON output and trace log for transparency
+- Trace log for transparency
