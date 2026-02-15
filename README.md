@@ -1,8 +1,8 @@
-# 🏦 PDF Policy Underwriting Agent
+# PDF Policy Underwriting Agent
 
 This project is a command-line tool that reads a loan policy PDF, extracts its lending criteria using Google Gemini, and automatically decides whether a loan application should be approved or denied. It parses rules like credit score thresholds, income minimums, and debt-to-income limits, then applies them to real applicant data with clear reasoning and explanations.
 
-# 🧰 Tools Used
+# Tools Used
 
 I built this project mainly in Python, using the following tools and libraries:
 
@@ -13,7 +13,7 @@ I built this project mainly in Python, using the following tools and libraries:
 - dotenv – to manage API keys and environment variables.
 - argparse & json – for command-line arguments and clean output formatting.
 
-# 🧠 Thought Process / Architecture
+# Thought Process / Architecture
 
 The goal was to create a simple underwriting system that could:
 
@@ -30,7 +30,7 @@ The code is structured into small, focused modules:
 
 It’s designed to be modular, so each piece can be swapped out later—for example, replacing Gemini with OpenAI or adding a web interface.
 
-# 🚀 Future Improvements & Challenges
+# Future Improvements & Challenges
 
 There’s a lot of room to grow:
 
