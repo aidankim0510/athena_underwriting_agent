@@ -40,7 +40,7 @@ There’s a lot of room to grow:
 - Interface – turn this into a small dashboard or API service.
 - Error handling – smarter fallback logic if the model output is incomplete.
 
-# ⚙️ How to Run the Code
+# How to Run the Code
 
 1. Clone the repository
 
